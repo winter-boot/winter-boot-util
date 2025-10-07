@@ -6,7 +6,7 @@
 
     <groupId>io.github.winter-boot</groupId>
     <artifactId>winter-boot-util</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>util</name>
     <description>实用工具</description>
     <url>https://github.com/winter-boot/winter-boot-util</url>
@@ -37,9 +37,9 @@
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <winter-boot-tuple.version>1.0.1</winter-boot-tuple.version>
-        <jackson-datatype-jsr310.version>2.19.0</jackson-datatype-jsr310.version>
-        <logback-classic.version>1.5.18</logback-classic.version>
+        <winter-boot-tuple.version>1.0.2</winter-boot-tuple.version>
+        <jackson-datatype-jsr310.version>2.20.0</jackson-datatype-jsr310.version>
+        <logback-classic.version>1.5.19</logback-classic.version>
         <central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
