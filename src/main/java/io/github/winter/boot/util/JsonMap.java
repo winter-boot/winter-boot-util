@@ -1,6 +1,7 @@
 package io.github.winter.boot.util;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import io.github.winter.boot.tuple.Value;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -12,6 +13,12 @@ import java.util.Map;
  * @author changebooks@qq.com
  */
 public final class JsonMap {
+    /**
+     * 值
+     */
+    private static final AbstractParser<Value> VALUE_PARSER = new AbstractParser<>() {
+    };
+
     /**
      * 对象
      */
@@ -49,6 +56,26 @@ public final class JsonMap {
     };
 
     private JsonMap() {
+    }
+
+    /**
+     * 值
+     *
+     * @param src the map
+     * @return a json string
+     */
+    public static String writeValue(Map<String, Value> src) {
+        return VALUE_PARSER.toJson(src);
+    }
+
+    /**
+     * 值
+     *
+     * @param json the json string
+     * @return a map
+     */
+    public static Map<String, Value> readValue(String json) {
+        return VALUE_PARSER.fromJson(json);
     }
 
     /**

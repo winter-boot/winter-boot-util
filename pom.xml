@@ -6,7 +6,7 @@
 
     <groupId>io.github.winter-boot</groupId>
     <artifactId>winter-boot-util</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>util</name>
     <description>实用工具</description>
     <url>https://github.com/winter-boot/winter-boot-util</url>
